@@ -4,7 +4,7 @@
 
 Website AntiHoax dibuat dengan tujuan mulia untuk membantu rakyat Indonesia memerangi berita hoax. Kami tidak berafiliasi dengan produk atau pihak manapun, dan website ini **tidak menghasilkan uang sepeserpun**.
 
-**Fitur Utama CekHoax:**
+**Fitur Utama AntiHoax:**
 
 * **Cek Fakta:** Verifikasi kebenaran berita dengan mudah dan cepat.
 * **Sumber Terpercaya:** Dapatkan informasi dari sumber terpercaya dan kredibel.
@@ -14,7 +14,7 @@ Website AntiHoax dibuat dengan tujuan mulia untuk membantu rakyat Indonesia meme
 
 AntiHoax adalah proyek open source yang dapat diakses oleh semua orang. 
 
-**Github:** [https://github.com/](https://github.com/)...
+**Github:** [https://github.com/NoVoid-Developer/AntiHoax]
 
 **Lisensi Kode:**
 
@@ -64,12 +64,13 @@ The AntiHoax website was created with the noble purpose of helping Indonesian ci
 
 AntiHoax is an open-source project that is accessible to everyone.
 
-**Github:** [https://github.com/](https://github.com/)...
+**Github:** [https://github.com/NoVoid-Developer/AntiHoax]
 
 
 **Code License**
 
 Code in AntiHoax is protected by Apache License 2.0, see LICENSE.txt for more
+
 **Benefits of AntiHoax:**
 
 * Helps combat hoax news in Indonesia.
@@ -80,7 +81,7 @@ Code in AntiHoax is protected by Apache License 2.0, see LICENSE.txt for more
 
 We kindly request that the AntiHoax website not be taken down as it plays a vital role in combating hoax news and improving digital literacy among Indonesian citizens.
 
-**CekHoax is committed to:**
+**AntiHoax is committed to:**
 
 * Providing accurate and reliable information.
 * Becoming a source of education for the community about hoax news.
