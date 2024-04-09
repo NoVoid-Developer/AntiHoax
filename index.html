@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AntiHoax : Menuju Indonesia Emas 2045</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>AntiHoax</h1>
+    <p>Masukkan berita yang ingin anda ketahui kebenarannya:</p>
+    <input type="text" id="prompt">
+    <br>
+    <button id="generate-button">Kirim</button>
+    <br>
+    <br>
+    <div id="result"></div>
+  </div>
+
+<div class="footer">
+  <span>Dibuat Oleh NoVoid dan didukung dengan Api Gemini, kode dilindungi dengan lisensi Apache License 2.0, cek/tekan <a href="readme.md" target="_blank">readme.md</a> untuk lebih lanjut</span>
+</div>
+
+
+  <script type="module">
+    import { GoogleGenerativeAI } from "@google/generative-ai";
+
+    // GET YOUR APIKEY
+    const API_KEY = "YOUR_APIKEY";
+
+    // Acces your apikey (see "Set up your API key" before)
+    const genAI = new GoogleGenerativeAI(API_KEY);
+
+    const generateButton = document.getElementById("generate-button");
+    const resultElement = document.getElementById("result");
+
+    generateButton.addEventListener("click", async () => {
+      const prompt = document.getElementById("prompt").value;
+
+      const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      const text = response.text();
+
+      resultElement.innerHTML = text;
+    });
+  </script>
+</body>
+</html>
